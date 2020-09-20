@@ -1,21 +1,16 @@
-# The Modern JavaScript BootCamp Course (2020)
+# The Web Developer Bootcamp
 ## **Colt Steele**
+
+This Repository is broken up into sections base on the units covered in Colt Steele's Web Developer Bootcamp avaialble from Udemy
+
+[The Web Developer Boot Camp by Colt Steele](https://www.udemy.com/course/the-web-developer-bootcamp/)
 
 ### **Notes**
 
-ECMA
-International group that is in charge of different sort of standartds
-- [ecma script](https://www.ecma-international.org/publications/standards/Ecma-262.htm)
-
-    * javascript continues to grow
-    * there isn't a single javascript 
-    implememted by all the browsers out there
-    ecma in charge of standards, programming, aucutstics, ecmascript
-
-    --TC39
+- Each Section has it's own README.md with notes as I followed along with this course.
+- There are code alongs and further notes broken up in each section based on the topics and exercises done with each topic
 
 
-[Can I Use](https://caniuse.com/#comparison)
 
 
 
