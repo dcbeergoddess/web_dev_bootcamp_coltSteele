@@ -1,0 +1,23 @@
+img {
+  /* "each one of these is 30%, making 90% total, plus 1.66% times 6 for the margins, which equals 99.96%" (nearly 100%). */
+  width: 30%;
+
+  /* float will get rid of automatic space html gives you for images */
+  /* use margin property to go back and change it */
+  float: left;
+
+  margin: 1.66%;
+
+}
+
+p {
+  font-family: 'Raleway', sans-serif;
+  margin-left: 1.66%;
+  font-size: 23px;
+  font-weight: 800;
+  text-transform: uppercase;
+  border-bottom: 2px solid #F1F1F1;
+  width: 30%;
+  padding-bottom: 20px;
+}
+

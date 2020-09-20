@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Boilerplate Form</title>
+</head>
+<body>
+  
+  <h1>Register</h1>
+
+  <form>
+
+    <!-- First Name and Last Name: INPUTS REQUIRED -->
+
+    <div>
+      <label for="fName">First Name: </label>
+      <input id="fName" name=fName type="text" placeholder="Maxwell" required>
+      <label for="lName">Last Name: </label>
+      <input id="lName" name="lName" type="text" placeholder="Cooter-Reynolds" required>
+    </div>  
+
+      <!-- Gender: Male Female Other | Radio Buttons | Only One Option -->
+
+    <div>
+      <label for="male">Male: </label>
+      <input id="male" name="genderChoice" type="radio" value="male">
+      <label for="female">Female: </label>
+      <input id="female" name="genderChoice" type="radio" value="female">
+      <label for="other">Other: </label>
+      <input id="other" name="genderChoice" type="radio" value="other"> 
+    </div>  
+
+      <!-- Email and Password: INPUTS REQURIED | extra credit password length validation | 
+        Pattern Attribute: title displays message, pattern defines range-->
+
+    <div>
+      <label>
+        Email:
+        <input name="email" type="email" placeholder="your email" required>
+      </label>
+      <label>
+        Password:
+        <input name="password" type="password" pattern=".{5,10}" required title="Password must be between 5-10 characters" placeholder="your password">
+      </label>
+    </div>  
+
+    <!-- </div>
+      <label for="email">Email: </label>
+      <input id="email" name="email" type="email" placeholder="your email" required>
+      <label for="password">Password: </label>
+      <input id="password" name="password" type="password" placeholder="your password" required validate>
+    </div> -->
+
+    <!-- Birthday: SELECT and OPTION | Month Day Year | Only 3 choices each -->
+
+    <div>
+      <label for="birthday">
+        Birthday:
+        <select name="month">
+          <option>Month</option>
+          <option value="1">May</option>
+          <option>Jan</option>
+          <option>Dec</option>
+        </select>
+        <select name="day">
+          <option>Day</option>
+          <option>10</option>
+          <option>11</option>
+          <option>12</option>
+        </select>
+        <select name="year">
+          <option>Year</option>
+          <option>1985</option>
+          <option>2019</option>
+          <option>2020</option>
+        </select>
+    </label>
+    </div>
+
+    <!-- CHECKBOX: I agree to the terms and conditions -->
+    <div>
+    <label for="terms">I agree to the terms and conditions: </label>
+    <input id="terms" name="terms" type="checkbox">
+    </div>  
+    <!-- SUBMIT BUTTON -->
+    <input type="submit">
+
+  </form>
+</body>
+</html>

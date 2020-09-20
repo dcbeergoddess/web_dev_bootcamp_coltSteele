@@ -1,0 +1,19 @@
+h1 {
+  color: rgb(0, 200, 100, 0.8);
+  /* border-color: purple;
+  border-width: 5px;
+  border-style: solid; */
+  border: 5px solid purple;
+}
+
+h4 {
+  background: rgb(255,100,80);
+  border: 8px dashed black;
+}
+
+body {
+  /* background: url(https://www.designerstencils.com/GetImage.ashx?Path=%7e%2fAssets%2fProductImages%2fFS024.jpg&maintainAspectRatio=true&maxHeight=466&maxWidth=466);
+  background-repeat: no-repeat;
+  background-size: cover; */
+  background: pink;
+}

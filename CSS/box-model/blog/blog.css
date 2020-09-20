@@ -1,0 +1,56 @@
+/* HINTS
+      Gray Box | Border Aound Body | 20px
+      Body | Has Explicit Width 
+      
+      border color: #bdc3c7
+      date color: #3498db
+      h2 blog title color: #2c3e50
+      
+      font: source sans pro, 
+      
+      First p left border block quote
+
+      All alighned along left
+
+      Date in all Caps and letter spacing further apart
+
+      In between posts, line - hr element - horizontal rule - thin line - hr styles
+      
+      */
+
+      div {
+        width: 60%;
+        margin: auto;
+        border: 20px solid #bdc3c7;
+        font-family: 'Source Sans Pro', sans-serif;
+      }
+
+      h2, h4, p {
+        margin-left: 20px;
+        margin-right: 20px;
+      }
+
+      h2 {
+        color: #2c3e50;
+      }
+
+      h4 {
+        color: #3498db;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+      }
+
+      h2 + p {
+        border-left: 5px solid #bdc3c7;
+        padding-left: 5px;
+      }
+
+      hr {
+        margin-left: 20px;
+        margin-right: 20px;
+        border: 0;
+        height: 0;
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+      }
+

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inputs</title>
+</head>
+<body>
+  <!-- adding names send info that you can see in the browser address with key value pairs -->
+
+  <p>Do you prefer cats or dogs?</p>
+
+  <!-- name connects the choices, is what gets sent in the http request -->
+  <!-- value tells you what to store -->
+
+  <form>
+<!-- radio button -->    
+    <label for="dogs">Dogs: </label>
+    <input name="petChoice" id="dogs" type="radio" value="dogs">
+
+    <label for="cats">Cats: </label>
+    <input name="petChoice" id="cats" type="radio" value="CATS">
+
+<!-- select tag -->
+    <p>What's your favorite color?</p>
+
+    <select Name="color">
+      <option>Red</option>
+      <option>Orange</option>ß
+      <option>Yellow</option>
+    </select>
+
+    <p>What's your current mood?</p>
+<!-- use value attribute to use what to send to the name to give you the proper key value pairs -->
+    <select name="mood">
+      <option value="happy">:)</option>
+      <option value="neutral">:|</option>
+      <option value="sad">:(</option>
+    </select> 
+<!-- textarea tag -->
+
+    <!-- gives sinle line -->
+    <input type="text">
+
+    <!-- seperate type of form control -->
+    <!-- size with rows and cols -->
+    <!-- add name as attribute -->
+    <textarea name="paragraph" roww="10" cols="10"></textarea>
+
+    <!-- if button is last thing in form automatically "submit" -->
+    <button>Go!</button>
+  </form>
+
+</body>
+</html>

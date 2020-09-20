@@ -1,0 +1,57 @@
+/* HINTS
+      Gray Box | Border Aound Body | 20px
+      Body | Has Explicit Width 
+      
+      border color: #bdc3c7
+      date color: #3498db
+      h2 blog title color: #2c3e50
+      
+      font: source sans pro, 
+      
+      First p left border block quote
+
+      All alighned along left
+
+      Date in all Caps and letter spacing further apart
+
+      In between posts, line - hr element - horizontal rule - thin line - hr styles
+      
+      */
+
+body {
+  border: 20px solid #bdc3c7;
+  padding: 20px;
+  /* at maximium keep it 700px, make it 80% when you need to 
+        I think mine was responsive... look into why*/
+  max-width: 700px;
+  width: 80%;
+  /* make it stay center but need space at top and bottom */
+  margin: 20px auto;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.post {
+  margin-bottom: 20px;
+}
+
+.date {
+  color: #3498db;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+}
+
+.quote {
+  border-left: 5px solid #bdc3c7;
+  padding-left: 5px;
+}
+
+h2 {
+  color: #2c3e50;
+  font-size: 2rem;
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
