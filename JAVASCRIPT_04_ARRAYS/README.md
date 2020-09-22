@@ -201,3 +201,114 @@ const otherNums = nums.slice()
 ```
 
 ## Array Iteration
+
+**OBJECTIVES**
+- Use a *for loop* to iterate for an array
+- Use *forEach* to iterate over an array
+- Compare and contrast *for loops* and *forEach*
+
+1. ### For Loop
+    - To loop over an array using a for loop, we need to make use of the array's _length_ property
+    ```js
+    const colors = ["red", "orange", "yellow", "green"];
+
+    for(let i = 0; i < colors.length; i++) {
+      console.log(colors[i]);
+    }
+    ```
+
+2. ### ForEach | Revist 166: Building our own ForEach
+
+    - JavaScript provides an easy built-in way of iterating over an array: ForEach
+    - more common nowadays | newer (2009 or so) | Colt thinks it's the best way
+    - passing a function (usually an anyonomous function) into another function 
+    - a little baggage at the beginning
+    ```js
+    arr.forEach(someFunction)
+    ```
+    ```js
+    const colors = ["red", "orange", "yellow", "green"];
+
+    colors.forEach(function(color){
+      //color is a placeholder, call it whatever you want
+      //this is how you get your data by passing in an argument//holds value of each item in the array as it loops through
+      console.log(color);
+    });
+
+    //ANOTHER EXAMPLE
+    function printColor(color) {
+      console.log("*****");
+      console.log(color);
+      console.log("*****")
+    }
+    //ENTER
+    printColor("purple")
+    //Prints
+    /*
+    ******
+    purple
+    ******
+    */
+
+    //Now ENTER
+    //DO NOT PUT () after printColor otherwise you will imediatley call that function before you want it to be called
+    //Calls this function when you loop through the array
+    colors.forEach(printColor)
+    //automatically calling colors[i]
+
+    //WHILE LOOP COULD ALSO BE USED | VERY UNCOMMON
+    let count = 0
+    while(count < colors.length) {
+      console.log(colors(count));
+      count++;
+    }
+
+    //SOME CASES WHERE YOU CAN NOT USE ForEach | looks like an array but it's not and can't use
+    ```
+
+3. For vs ForEach
+    - the following 2 code snippets do the same thing:
+    ```js
+      //with a for loop
+      //dealing with a number (using number to access that area/iterate through array)
+      const colors = ["red", "orange", "yellow", "green"]
+          
+      for(let i = 0; i < colors.length; i++){
+        console.log(colors[i]);
+      }    
+    ```
+
+    ```js
+      //with forEach
+      //number is abstracted from us
+      //dealing with a name that we create as temporary placeholder
+      //use that inside of function/most oftern anymous function/unless you use a function you want to use later on
+      const colors = ["red", "orange", "yellow", "green"];
+
+      colors.forEach(function(color){
+        console.log(color);
+      })
+    ```
+    ```js
+    /* forEach takes a callback function, that callback function is expected to have at least 1, but up to 3, arguments. This is how .forEach was designed.
+
+  The arguments are in a specific order:
+  - The first one represents each element in the array (per loop iteration) that .forEach was called on.
+  - The second represents the index of said element.
+  - The third represents the array that .forEach was called on (it will be the same for every iteration of the loop).
+  
+  You have a couple options when calling .forEach on an array
+  You can pass in an anonymous function:
+  */
+  [1,2,3].forEach(function(el, i, arr) {
+  console.log(el, i, arr);
+  });
+  
+  //Or you can pass in a pre-written, named function.
+  function logNums(el, i, arr) {
+  console.log(el, i, arr);
+  }
+  [1,2,3].forEach(logNums);
+  //Notice how in the second example we don't invoke logNums when passing it into .forEach? We simply pass in the function name. We don't need to invoke the logNums function, .forEach does that for us. In fact, it invokes the function multiple times, once for every element inside of the array.
+```
+

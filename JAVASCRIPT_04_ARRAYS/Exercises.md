@@ -30,15 +30,26 @@ console.log(friendsGroups[2][0]);
 //Anwser: Mooney
 ```
 
-## Exercise 3
+## Exercise 3 | Loops and Array
 
 ```js
+//What does the following code print out?
+const numbers = [1,2,3,4,5,6,7,8,9,10];
+const colors = ["red", "orange", "yellow", "green"];
 
+numbers.forEach(function(color){
+  if(color % 3 === 0) {
+    conosle.log(color);
+  }
+});
+
+//Anwser: 3, 6, 9 
 ```
 
 ## Exercise 4
 
 ```js
+
 
 ```
 
