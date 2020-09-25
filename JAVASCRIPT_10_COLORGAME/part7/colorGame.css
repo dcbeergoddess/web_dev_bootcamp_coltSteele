@@ -1,0 +1,97 @@
+body {
+  background-color: #232323;
+  /* gets rid of gap around h1, h1 also has margin 0 */
+  margin: 0;
+  font-family: "Montserrat", "Avenir";
+}
+
+/* take up 30% of container */
+/* margin between on all sides 1.66% */
+/* all adds up to be 100% of container */
+/* add padding-bottom since div is empty */
+/* add float so not all in a line on top of each other */
+/* add margin so we can see grid */
+
+.square {
+   width: 30%;
+   background: purple;
+   padding-bottom: 30%;
+   float: left;
+   margin: 1.66%;
+   /* reounded corners */
+   border-radius: 15%;
+   /* animation effect transition does not work in all browsers, webkit/safari, moz/mozillas) */
+   transition: background 0.6s;
+    --webkit-transition: background 0.6s;
+    -moz-transition: background 0.6s;
+}
+
+/* don't want grid to take up entire screen */
+/* style container */
+
+#container {
+  /* center container trick */
+   /* spacing between stripe and bottom */
+  margin: 20px auto;
+  /* change size maximum */
+  max-width: 600px;
+}
+
+h1 {
+  text-align: center;
+  line-height: 1.1;
+  color: white;
+  background: steelblue;
+  /* get rid of black around h1, also need to change body */
+  margin: 0;
+  font-weight: normal;
+  text-transform: uppercase;
+  /* add padding to top and bottom */
+  padding: 20px 0;
+}
+
+#colorDisplay {
+  /* in realation to h1 size */
+  font-size: 200%;
+}
+
+#message {
+  /* takes space even if no text yet */
+  display: inline-block;
+  width: 20%;
+}
+
+/* span inside inheirts color from parent element */
+#stripe {
+  background: white;
+  height: 30px;
+  text-align: center;
+}
+
+/* hover blue for easy/hard */
+.selected {
+  color: white;
+  background: steelblue;
+}
+
+button {
+  border: none;
+  background: none;
+  text-transform: uppercase;
+  /* take up 100% of containing element */
+  height: 100%;
+  font-weight: 700;
+  color: steelblue;
+  letter-spacing: 1px;
+  /* inherit, dont have to specifically set it */
+  font-size: inherit;
+  /* css transition property | first which ones | second how long */
+  transition: all 0.3s;
+  --webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+}
+
+button:hover {
+  color: white;
+  background: steelblue;
+}

@@ -1,0 +1,32 @@
+body {
+  background-color: #232323
+}
+
+/* take up 30% of container */
+/* margin between on all sides 1.66% */
+/* all adds up to be 100% of container */
+/* add padding-bottom since div is empty */
+/* add float so not all in a line on top of each other */
+/* add margin so we can see grid */
+
+.square {
+   width: 30%;
+   background: purple;
+   padding-bottom: 30%;
+   float: left;
+   margin: 1.66%;
+}
+
+/* don't want grid to take up entire screen */
+/* style container */
+
+#container {
+  /* center container trick */
+  margin: 0 auto;
+  /* change size maximum */
+  max-width: 600px;
+}
+
+h1 {
+  color: white;
+}
