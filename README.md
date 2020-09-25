@@ -8,7 +8,7 @@ This Repository is broken up into sections based on the units covered in Colt St
 ### **Notes**
 
 - Each Section has it's own README.md with notes as I followed along with this course.
-- There are code alongs and further notes broken up in each section based on the topics and exercises done with each topic
+- There are code alongs and further notes broken up in each section based on the topics and exercises done for each
 - Most Variables that Colt defined using **_var_** were replaced with **_const_** or **_let_** 
 
 
