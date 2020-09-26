@@ -60,3 +60,7 @@ p {
   * Transition
   * Gradients
 
+## ORDERING CSS FILE
+
+- ORDER by how items appear on page
+- ORDER by specficity

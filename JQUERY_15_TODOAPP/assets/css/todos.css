@@ -18,9 +18,6 @@ h1 {
   font-weight: 400;
 }
 
-.fa-plus {
-  float: right;
-}
 
 ul {
   list-style: none;
@@ -36,11 +33,6 @@ li {
   color: #666;
 }
 
-/* every other li | 2n patter | 3n would be every 3rd */
-li:nth-child(2n) {
-  background: #f7f7f7
-}
-
 span {
   background: #e74c3c;
   height: 40px;
@@ -53,11 +45,6 @@ span {
   opacity: 0;
 }
 
-li:hover span {
-  width: 40px;
-  opacity: 1.0;
-}
-
 input {
   font-size: 18px;
   background-color: #f7f7f7;
@@ -66,6 +53,17 @@ input {
   /* box-sizing used in css box grid */
   box-sizing: border-box;
   border: none
+}
+
+
+/* every other li | 2n patter | 3n would be every 3rd */
+li:nth-child(2n) {
+  background: #f7f7f7
+}
+
+li:hover span {
+  width: 40px;
+  opacity: 1.0;
 }
 
 input:focus {
@@ -84,4 +82,8 @@ input:focus {
 .completed {
   color: gray;
   text-decoration: line-through;
+}
+
+.fa-plus {
+  float: right;
 }
