@@ -32,6 +32,11 @@ $('input[type="text"]').keypress(function(e){
   }
 })
 
+//HIDE ADD TODO INPUT
+$('.fa-plus').click(function(){
+  $('input[type="text"]').fadeToggle();
+})
+
 
 /*==================== REFACTORED USING CLASS COMPLETED LINES 1-6==============================
 //Check Off Specific Todos by Clicking | Turn Gray w/ Strikethrough

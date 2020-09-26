@@ -2,6 +2,7 @@
 **Making things Interactive**
 
 - Equivialent to _.addEventListener_ in Vanilla JS 
+- toggle keeps track of STATE
 
 **[jQuery Events Documentation](https://api.jquery.com/category/events/)**
 
