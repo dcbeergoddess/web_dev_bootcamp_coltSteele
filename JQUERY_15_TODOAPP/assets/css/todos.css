@@ -1,8 +1,58 @@
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+  background: #2980b9;
+  color: white;
+  margin: 0;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  font-size: 24px;
+  /* h1 is bold by defualt | 400: regular/normal*/
+  font-weight: 400;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  background: #fff;
+  height: 40px;
+  /* center text in li line. set to same as height */
+  line-height: 40px;
+  color: #666;
+}
+
+/* every other li | 2n patter | 3n would be every 3rd */
+li:nth-child(2n) {
+  background: #f7f7f7
+}
+
+input {
+  font-size: 18px;
+  background-color: #f7f7f7;
+  width: 100%;
+  padding: 13px 13px 13px 20px;
+  /* box-sizing used in css box grid */
+  box-sizing: border-box;
+  border: none;
+}
+
+input:focus {
+  background: white;
+  border: 3px solid #2980b9;
+  outline: none;
+}
+
 #container {
   width: 360px;
-  /* center trick: top and bottom 0, left and right auto */
-  margin: 0 auto; 
-  border: 2px solid gray;
+  margin: 100px auto; 
+  background: #f7f7f7;
+  box-shadow: 0 0 3px rgba(0,0,0,0.1);
 }
 
 .completed {
