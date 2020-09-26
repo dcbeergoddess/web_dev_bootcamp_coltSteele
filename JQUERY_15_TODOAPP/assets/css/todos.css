@@ -1,3 +1,6 @@
-body {
-  background: purple;
+#container {
+  background: gray;
+  width: 360px;
+  /* center trick: top and bottom 0, left and right auto */
+  margin: 0 auto; 
 }
