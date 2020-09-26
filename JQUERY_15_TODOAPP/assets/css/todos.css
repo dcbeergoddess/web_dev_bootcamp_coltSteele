@@ -1,5 +1,10 @@
 body {
   font-family: 'Roboto', sans-serif;
+  /* linear gradients from website resource */
+  background: #E55D87;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #5FC3E4, #E55D87);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #5FC3E4, #E55D87); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 
 h1 {
@@ -11,6 +16,10 @@ h1 {
   font-size: 24px;
   /* h1 is bold by defualt | 400: regular/normal*/
   font-weight: 400;
+}
+
+.fa-plus {
+  float: right;
 }
 
 ul {
@@ -32,6 +41,23 @@ li:nth-child(2n) {
   background: #f7f7f7
 }
 
+span {
+  background: #e74c3c;
+  height: 40px;
+  margin-right: 20px;
+  text-align: center;
+  color: white;
+  width: 0px;
+  display: inline-block;
+  transition: 0.2s linear;
+  opacity: 0;
+}
+
+li:hover span {
+  width: 40px;
+  opacity: 1.0;
+}
+
 input {
   font-size: 18px;
   background-color: #f7f7f7;
@@ -39,7 +65,7 @@ input {
   padding: 13px 13px 13px 20px;
   /* box-sizing used in css box grid */
   box-sizing: border-box;
-  border: none;
+  border: none
 }
 
 input:focus {
