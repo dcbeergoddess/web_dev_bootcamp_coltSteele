@@ -12,6 +12,13 @@ This Repository is broken up into sections based on the units covered in Colt St
 - Most Variables that Colt defined using **_var_** were replaced with **_const_** or **_let_** 
 
 
+### EXPRESS EXERCISE
+- First: When get number out of path is acutally a string and need to turn it into a number
+- SECOND: need to create loop build up a string to print out
+
+
+
+
 
 
 

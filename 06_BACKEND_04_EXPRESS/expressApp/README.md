@@ -52,7 +52,7 @@
     - create a new package.json file
   
   * NODEMON
-    - `npm install  --save-dev nodemon`
+    - `npm install nodemon --save-dev `
     - `npx nodemon app.js`
 
 ## II PART TWO
@@ -75,10 +75,6 @@
       - MAKE IT INTO A PATTERN/VARIABLE `:`
         - `/r/:subredditName`
         - even more for `r/:subredditName/comments/:id/:title/`
-
-
-        
-      
 
     3. Discuss route order
       - FIRST route that matches will be the route that is run
