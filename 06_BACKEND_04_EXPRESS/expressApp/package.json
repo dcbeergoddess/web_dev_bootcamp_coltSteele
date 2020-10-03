@@ -1,0 +1,16 @@
+{
+  "name": "expressapp",
+  "version": "1.0.0",
+  "description": "* Review an existing app (DogDemo)   - The ROUTES     - the code responsible for listening and reciveing the http request and then deciding what to send back     - code listening for post request       - create dogs       - etc     - code listening for get request       - code to find all dogs and render dog page   - START SERVER     - setting up port",
+  "main": "app.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
