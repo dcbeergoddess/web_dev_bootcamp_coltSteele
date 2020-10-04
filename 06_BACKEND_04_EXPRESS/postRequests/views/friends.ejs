@@ -6,8 +6,10 @@
   <li><%= friend %></li>
 <% }) %>
 
+<!-- on input, need to give it a NAME, the NAME will be the KEY we look it up by inside the ROUTE -->
+<!-- //i.e. newFriend=bob if you type in bob -->
 <form action="/addFriend" method="POST">
-  <input type="text" placeholder="name">
+  <input type="text" name="newfriend" placeholder="name">
   <button>I made a new friend!</button>
 </form>
 
