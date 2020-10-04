@@ -60,15 +60,18 @@
 ## STYLES AND PARTIALS
 
 * Show how to properly include public assets
-  - 
+  - create public directory and add style shee
+  - tell express to server the public directory
 
 * Properly configure our app to use EJS
-  - 
+  - tell express all our templates will be EJS 
 
 * use partials to DRY up our code
-  - 
+  - use templates that all other templates can use for html/stylesheets you want accross all pages
+  - make Directory called partials or layout
 
 * Including PARTIALS in your EJS views
+  - again don't need ejs because you told express to look for ejs files as templates
   - EJS has recently been updated to v3.0.1 and now uses the following syntax:
       * `<%- include("partials/header") %>`
       * `<%- include("partials/footer") %>`

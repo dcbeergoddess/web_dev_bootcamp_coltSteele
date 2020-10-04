@@ -2,15 +2,20 @@ const express = require('express');
 const app = express();
 const PORT = 8080
 
+//tells express to serve the contents of the directory public
+app.use(express.static("public"));
+//tells express to use ejs so we can leave .ejs off the res.render str being passed in
+app.set("view engine", "ejs");
+
 //ROOT ROUTE
 app.get("/", (req, res) => {
-  res.render("home.ejs")
+  res.render("home")
 });
 
 //create conditional
 app.get("/fallinlovewith/:thing", (req, res) => {
   let thing = req.params.thing;
-  res.render("love.ejs", {thingVar: thing});
+  res.render("love", {thingVar: thing});
 });
 
 //FOR LOOPS
@@ -21,7 +26,7 @@ app.get("/posts", (req, res) => {
     {title: "Post 3", author: "Dan"},
   ]
 
-  res.render("posts.ejs", {postsArr: posts});
+  res.render("posts", {postsArr: posts});
 })
 
 
