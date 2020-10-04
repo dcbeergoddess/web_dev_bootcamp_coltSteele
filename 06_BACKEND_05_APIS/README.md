@@ -109,7 +109,11 @@
 
   ```
 
-
+## Making Requests
+  - Can Take Time
+  - 200 is the standard status code for a success 
+  - want to check for errors in your API call
+  - 
   
 
   
