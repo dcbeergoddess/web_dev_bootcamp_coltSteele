@@ -60,8 +60,10 @@
       ```
 
 ## AXIOS - MAKE HTTP REQUEST FROM CODE
+  - [WEB DOCUMENTATION](https://www.npmjs.com/package/axios)
   - help make http request to APIs
   - Promise based HTTP client for the browser and node.js
+  - [DUMMY API JSON PLACEHOLDER](https://jsonplaceholder.typicode.com/)
   ```js
   //WITH thenable promise
     axios.get("https://jsonplaceholder.typicode.com/todos/1")
