@@ -1,8 +1,6 @@
 const axios = require('axios');
-const dotenv = require('dotenv').config();
 
-
-axios.get("https://api.openweathermap.org/data/2.5/weather?q=honolulu&appid=" + process.env.API_KEY)
+axios.get("https://api.openweathermap.org/data/2.5/weather?q=honolulu&appid=105f3341727436740b10e375a70600be")
   .then((res) => {
     // console.log(res.data)
     console.log(res.data.sys.sunset)
