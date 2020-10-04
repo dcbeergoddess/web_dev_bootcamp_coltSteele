@@ -16,6 +16,12 @@ This Repository is broken up into sections based on the units covered in Colt St
 - First: When get number out of path is acutally a string and need to turn it into a number
 - SECOND: need to create loop build up a string to print out
 
+## COMMAND LINE SNIPPETS
+
+  * NODEMON - restart server when changes made
+    - `npm install nodemon --save-dev `
+    - `npx nodemon app.js`
+
 
 
 

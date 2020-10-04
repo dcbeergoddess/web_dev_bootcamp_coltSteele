@@ -7,7 +7,7 @@ const PORT = 8080; //3000 //8000 //8080
 
 // CREATE 3 DIFFERENT ROUTE
 
-// "/" => "Hi there!" | Route Path
+// "/" => "Hi there!" | Root Path
 app.get("/", function(req, res){
   res.send("Hi there!");
 })

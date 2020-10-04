@@ -4,7 +4,7 @@ const PORT = 8080;
 
 //# DIFFERNT ROUTES
 
-//HOMEPAGE/ROUTE PATH
+//HOMEPAGE/ROOT ROUTE or PATH
 app.get("/", (req, res) => {
   res.send("Hi there, Welcome to my assignment!")
 })
