@@ -1,0 +1,17 @@
+<h1>The Posts Page</h1>
+
+
+<!-- loop through using for loop -->
+<% for(let i = 0; i < postsArr.length; i++){ %>
+  <li>
+    <%= postsArr[i].title %> - <strong><%= postsArr[i].author %></strong>
+  </li>
+<% } %>
+
+<!-- SAME for forEach or while loop, forEach more common, gives ability to name it post rather than using [i] notation -->
+
+<% postsArr.forEach((post) => { %>
+  <li>
+    <%= post.title %> - <strong><%= post.author %></strong>
+  </li>
+<% }) %>
